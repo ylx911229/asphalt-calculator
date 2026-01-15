@@ -83,14 +83,14 @@ export const pageSEO: Record<string, PageSEO> = {
     canonical: `${siteConfig.url}/faq`
   },
   privacy: {
-    title: 'Privacy Policy - Asphalt Calculator Data Protection',
+    title: 'Privacy Policy - Data Protection',
     description: 'Read our Privacy Policy to understand how Asphalt Calculator collects, uses, and protects your personal data when you use our free paving estimation tools.',
     keywords: ['privacy policy'],
     canonical: `${siteConfig.url}/privacy`
   },
   terms: {
-    title: 'Terms of Service - Asphalt Calculator Usage Rules',
-    description: 'Review the Terms of Service for Asphalt Calculator. Understand the rules, disclaimers, and limitations of liability when using our free online estimation tools.',
+    title: 'Terms of Service - Usage Rules',
+    description: 'Review the Terms of Service for Asphalt Calculator. Understand rules, disclaimers, and limitations of liability when using our free online estimation tools.',
     keywords: ['terms of service'],
     canonical: `${siteConfig.url}/terms`
   }

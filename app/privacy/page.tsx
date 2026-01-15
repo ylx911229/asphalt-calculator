@@ -1,16 +1,17 @@
 import type { Metadata } from 'next';
 import { Shield } from 'lucide-react';
-import { siteConfig } from '@/lib/seo';
+import { siteConfig, pageSEO } from '@/lib/seo';
 
 export const metadata: Metadata = {
-  title: `Privacy Policy | ${siteConfig.name}`,
-  description: 'Privacy Policy for Asphalt Calculator. Learn how we collect, use, and protect your personal information.',
+  title: pageSEO.privacy.title,
+  description: pageSEO.privacy.description,
+  keywords: pageSEO.privacy.keywords,
   robots: {
     index: false,
     follow: true,
   },
   alternates: {
-    canonical: `${siteConfig.url}/privacy`,
+    canonical: pageSEO.privacy.canonical,
   },
 };
 
@@ -42,7 +43,7 @@ export default function PrivacyPage() {
               At Asphalt Calculator ("we," "our," or "us"), we respect your privacy and are committed to protecting it through our compliance with this policy. This policy describes the types of information we may collect from you or that you may provide when you visit the website {siteConfig.url} (our "Website") and our practices for collecting, using, maintaining, protecting, and disclosing that information.
             </p>
 
-            <h3>1. Information We Collect</h3>
+            <h2>1. Information We Collect</h2>
             <p>
               We collect minimal information to provide you with a better experience. The types of information we may collect include:
             </p>
@@ -51,7 +52,7 @@ export default function PrivacyPage() {
               <li><strong>Cookies:</strong> We use cookies and similar tracking technologies to track the activity on our Service and hold certain information.</li>
             </ul>
 
-            <h3>2. How We Use Your Information</h3>
+            <h2>2. How We Use Your Information</h2>
             <p>
               We use the collected data for various purposes:
             </p>
@@ -65,12 +66,12 @@ export default function PrivacyPage() {
               <li>To detect, prevent and address technical issues</li>
             </ul>
 
-            <h3>3. Calculation Data</h3>
+            <h2>3. Calculation Data</h2>
             <p>
               Any data you enter into our calculators (such as dimensions, costs, etc.) is processed locally on your device or temporarily on our servers solely for the purpose of generating the calculation results. We do not store your specific project calculation data on our servers after the calculation is complete.
             </p>
 
-            <h3>4. Third-Party Services</h3>
+            <h2>4. Third-Party Services</h2>
             <p>
               We may employ third-party companies and individuals to facilitate our Service ("Service Providers"), to provide the Service on our behalf, to perform Service-related services or to assist us in analyzing how our Service is used. These third parties have access to your Personal Data only to perform these tasks on our behalf and are obligated not to disclose or use it for any other purpose.
             </p>
@@ -78,17 +79,17 @@ export default function PrivacyPage() {
               <strong>Google Analytics:</strong> We may use Google Analytics to monitor and analyze the use of our Service. Google Analytics is a web analytics service offered by Google that tracks and reports website traffic.
             </p>
 
-            <h3>5. Security of Data</h3>
+            <h2>5. Security of Data</h2>
             <p>
               The security of your data is important to us, but remember that no method of transmission over the Internet, or method of electronic storage is 100% secure. While we strive to use commercially acceptable means to protect your Personal Data, we cannot guarantee its absolute security.
             </p>
 
-            <h3>6. Changes to This Privacy Policy</h3>
+            <h2>6. Changes to This Privacy Policy</h2>
             <p>
               We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page. You are advised to review this Privacy Policy periodically for any changes. Changes to this Privacy Policy are effective when they are posted on this page.
             </p>
 
-            <h3>7. Contact Us</h3>
+            <h2>7. Contact Us</h2>
             <p>
               If you have any questions about this Privacy Policy, please contact us by email: support@asphalt-calculator.net
             </p>
