@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { HelpCircle, ChevronDown } from 'lucide-react';
+import { HelpCircle, ChevronDown, MessageCircle } from 'lucide-react';
 import { pageSEO } from '@/lib/seo';
 
 export const metadata: Metadata = {
@@ -63,18 +63,21 @@ export default function FAQPage() {
   return (
     <div>
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-blue-600 to-blue-800 text-white py-16">
-        <div className="container mx-auto px-4">
+      <section className="bg-gradient-to-br from-blue-600 to-blue-800 text-white py-16 md:py-24 relative overflow-hidden">
+        {/* Abstract shapes */}
+        <div className="absolute top-0 right-0 -mt-10 -mr-10 w-64 h-64 bg-white opacity-5 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-0 left-0 -mb-10 -ml-10 w-40 h-40 bg-white opacity-5 rounded-full blur-2xl"></div>
+
+        <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
-            <div className="flex justify-center mb-6">
-              <div className="bg-white/10 p-4 rounded-full">
-                <HelpCircle size={48} />
-              </div>
+             <div className="inline-flex items-center gap-2 bg-blue-500/30 backdrop-blur-sm px-4 py-1.5 rounded-full border border-blue-400/30 text-blue-100 text-sm font-medium mb-6">
+              <MessageCircle size={16} />
+              <span>Frequently Asked Questions</span>
             </div>
-            <h1 className="text-4xl md:text-5xl font-bold mb-4">
+            <h1 className="text-4xl md:text-5xl font-extrabold mb-6 tracking-tight">
               Asphalt Calculator FAQ
             </h1>
-            <p className="text-xl text-blue-100">
+            <p className="text-xl text-blue-100 max-w-2xl mx-auto">
               Find answers to common questions about asphalt calculations, costs, installation, and maintenance
             </p>
           </div>
@@ -82,73 +85,30 @@ export default function FAQPage() {
       </section>
 
       {/* FAQ Content */}
-      <section className="py-16">
+      <section className="py-16 md:py-24">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
+          <div className="max-w-3xl mx-auto">
             <div className="space-y-4">
               {faqs.map((faq, index) => (
                 <details
                   key={index}
-                  className="bg-white rounded-lg shadow-md border border-gray-200 group"
+                  className="bg-white rounded-xl shadow-sm border border-slate-200 group overflow-hidden transition-all hover:shadow-md"
                 >
-                  <summary className="flex items-center justify-between p-6 cursor-pointer hover:bg-gray-50 transition-colors">
-                    <h3 className="text-lg font-bold text-gray-900 pr-4">{faq.question}</h3>
-                    <ChevronDown className="text-blue-600 flex-shrink-0 group-open:rotate-180 transition-transform" size={24} />
+                  <summary className="flex items-center justify-between p-6 cursor-pointer hover:bg-slate-50 transition-colors select-none">
+                    <h3 className="text-lg font-bold text-slate-900 pr-4">{faq.question}</h3>
+                    <div className="bg-slate-100 p-1.5 rounded-full group-open:bg-blue-100 transition-colors">
+                      <ChevronDown className="text-slate-500 group-open:rotate-180 group-open:text-blue-600 transition-all duration-300" size={20} />
+                    </div>
                   </summary>
-                  <div className="px-6 pb-6">
-                    <p className="text-gray-700 leading-relaxed">{faq.answer}</p>
+                  <div className="px-6 pb-6 pt-0 animate-fade-in">
+                    <p className="text-slate-600 leading-relaxed border-t border-slate-100 pt-4">{faq.answer}</p>
                   </div>
                 </details>
               ))}
             </div>
-
-            {/* Additional Info */}
-            <div className="mt-12 bg-blue-50 border border-blue-200 rounded-xl p-8">
-              <h2 className="text-2xl font-bold text-gray-900 mb-4">
-                Still Have Questions About Asphalt Calculations?
-              </h2>
-              <p className="text-gray-700 mb-6">
-                Our asphalt calculator tools are designed to provide accurate estimates for your paving project.
-                For complex projects or specific technical questions, we recommend consulting with a professional
-                paving contractor who can assess your site conditions and provide detailed specifications.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4">
-                <a
-                  href="/"
-                  className="bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors text-center"
-                >
-                  Use Asphalt Calculator
-                </a>
-                <a
-                  href="/guide"
-                  className="bg-white text-blue-600 border-2 border-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-colors text-center"
-                >
-                  View Paving Guide
-                </a>
-              </div>
-            </div>
           </div>
         </div>
       </section>
-
-      {/* Schema.org FAQ */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            '@context': 'https://schema.org',
-            '@type': 'FAQPage',
-            mainEntity: faqs.map((faq) => ({
-              '@type': 'Question',
-              name: faq.question,
-              acceptedAnswer: {
-                '@type': 'Answer',
-                text: faq.answer,
-              },
-            })),
-          }),
-        }}
-      />
     </div>
   );
 }
