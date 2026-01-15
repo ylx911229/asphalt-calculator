@@ -92,7 +92,7 @@ export default function TonnagePage() {
               </div>
 
               <p className="text-slate-600 mb-6 leading-relaxed">
-                The asphalt ton calculator provides base estimates - discuss your specific project with suppliers to determine if additional material is needed
+                The <strong>asphalt tonnage calculator</strong> provides base estimates - discuss your specific project with suppliers to determine if additional material is needed
                 for your site conditions. Proper tonnage calculation prevents costly delays from material shortages.
               </p>
             </div>

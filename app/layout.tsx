@@ -77,6 +77,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="h-full">
+      <head>
+        {/* <!-- Google tag (gtag.js) --> */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-VHLRQ5193H"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          dataLayer.push('js', new Date());
+          dataLayer.push('config', 'G-VHLRQ5193H');
+        </script>
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased flex flex-col min-h-full`}
       >

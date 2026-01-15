@@ -81,7 +81,7 @@ export default function FAQPage() {
               Asphalt Calculator FAQ
             </h1>
             <p className="text-xl text-blue-100 max-w-2xl mx-auto">
-              Find answers to common questions about asphalt calculations, costs, installation, and maintenance
+              Find answers to common questions in our <strong>asphalt calculator FAQ</strong> about asphalt calculations, costs, installation, and maintenance
             </p>
           </div>
         </div>

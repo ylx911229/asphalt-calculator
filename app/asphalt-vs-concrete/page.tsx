@@ -108,15 +108,15 @@ export default function ComparisonPage() {
             <div className="bg-slate-50 rounded-2xl p-8 mb-16 border border-slate-200">
               <h3 className="text-2xl font-bold text-slate-900 mb-4">The Verdict</h3>
               <p className="text-lg text-slate-700 leading-relaxed mb-4">
-                When comparing asphalt vs concrete driveway costs, the initial installation price is just one factor to
-                consider. Our asphalt vs concrete driveway cost calculator helps you understand both upfront and long-term
+                When comparing <strong>asphalt vs concrete</strong> driveway costs, the initial installation price is just one factor to
+                consider. Our <strong>asphalt vs concrete</strong> driveway cost calculator helps you understand both upfront and long-term
                 expenses. Asphalt typically costs $3-7 per square foot installed, while concrete costs $4-10 per square foot.
                 However, maintenance requirements and lifespan significantly impact total ownership costs over time.
               </p>
               <p className="text-lg text-slate-700 leading-relaxed">
                 Asphalt driveways require more frequent maintenance, including seal coating every 2-3 years at $0.15-0.25
                 per square foot. Concrete driveways need less maintenance but may require sealing every 5-10 years. Over a
-                20-year period, total costs for asphalt and concrete become more comparable when factoring in maintenance.
+                20-year period, total costs for <strong>asphalt vs concrete</strong> become more comparable when factoring in maintenance.
                 The asphalt vs concrete cost calculator accounts for these long-term expenses to provide accurate comparisons.
               </p>
             </div>

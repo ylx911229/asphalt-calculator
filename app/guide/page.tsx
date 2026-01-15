@@ -45,7 +45,7 @@ export default function GuidePage() {
             <div className="prose prose-slate prose-lg max-w-none mb-16">
               <p className="text-xl text-slate-600 leading-relaxed font-light">
                 Planning an asphalt paving project requires careful calculation of materials, understanding of costs,
-                and knowledge of proper installation techniques. This comprehensive guide covers everything from using
+                and knowledge of proper installation techniques. This comprehensive <strong>asphalt paving guide</strong> covers everything from using
                 an asphalt calculator to determine material requirements, to understanding thickness specifications,
                 cost factors, and maintenance best practices.
               </p>

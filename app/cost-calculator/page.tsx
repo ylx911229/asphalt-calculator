@@ -57,7 +57,7 @@ export default function CostCalculatorPage() {
             <div className="prose prose-slate prose-lg max-w-none">
               <p className="text-slate-600 mb-6 leading-relaxed">
                 The cost of an asphalt driveway varies significantly based on project size, location, and site conditions.
-                Our asphalt driveway cost calculator provides detailed estimates by breaking down expenses into three main
+                Our <strong>asphalt driveway cost calculator</strong> provides detailed estimates by breaking down expenses into three main
                 categories: material costs, labor costs, and base preparation costs. Understanding these cost components
                 helps you budget accurately and make informed decisions about your paving project.
               </p>
@@ -97,7 +97,7 @@ export default function CostCalculatorPage() {
               <p className="text-slate-600 mb-6 leading-relaxed">
                 Total asphalt driveway cost typically ranges from <strong>$3-7 per square foot installed</strong>. A 400 square foot driveway
                 costs $1,200-$2,800 on average, while a 1,000 square foot driveway costs $3,000-$7,000. Larger projects
-                benefit from economies of scale with lower per-square-foot costs. Use our asphalt driveway cost calculator
+                benefit from economies of scale with lower per-square-foot costs. Use our <strong>asphalt driveway cost calculator</strong>
                 to get accurate estimates tailored to your project size and specifications.
               </p>
             </div>

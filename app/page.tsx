@@ -84,7 +84,7 @@ export default function HomePage() {
             </h1>
             <p className="text-xl md:text-2xl mb-12 text-blue-100 max-w-3xl mx-auto leading-relaxed font-light">
               Calculate asphalt material, tonnage, and costs for driveways, parking lots, and roads.
-              Get accurate estimates in seconds.
+              Our <strong>asphalt calculator</strong> provides accurate estimates in seconds.
             </p>
             <div className="flex flex-col sm:flex-row gap-5 justify-center">
               <a
@@ -204,7 +204,7 @@ export default function HomePage() {
                     <h3 className="text-2xl font-bold text-slate-900 mb-3 group-hover:text-blue-600 transition-colors">Measure Your Area</h3>
                     <p className="text-slate-600 leading-relaxed text-lg">
                       Measure the length and width of the area you want to pave. For driveways, measure from the garage
-                      to the street. Use a measuring tape or wheel for accuracy. The calculator supports multiple units including feet, meters, yards.
+                      to the street. Use a measuring tape or wheel for accuracy. The <strong>asphalt calculator</strong> supports multiple units including feet, meters, yards.
                     </p>
                   </div>
                 </div>

@@ -6,14 +6,7 @@ export const siteConfig = {
   keywords: [
     'asphalt calculator',
     'asphalt driveway cost calculator',
-    'cost of asphalt driveway calculator',
-    'asphalt vs concrete driveway cost calculator',
     'asphalt tonnage calculator',
-    'asphalt ton calculator',
-    'paving calculator',
-    'driveway cost estimator',
-    'asphalt material calculator',
-    'asphalt thickness calculator'
   ]
 };
 
@@ -37,29 +30,27 @@ export const pageSEO: Record<string, PageSEO> = {
     canonical: siteConfig.url
   },
   cost: {
-    title: 'Asphalt Driveway Cost Calculator - Estimate Paving',
+    title: 'Asphalt Driveway Cost Calculator',
     description: 'Estimate your asphalt driveway cost with our free calculator. Get accurate material and labor cost breakdowns for residential and commercial paving projects.',
     keywords: [
       'asphalt driveway cost calculator',
       'cost of asphalt driveway calculator',
-      'paving cost estimator',
       'driveway cost calculator'
     ],
     canonical: `${siteConfig.url}/cost-calculator`
   },
   comparison: {
-    title: 'Asphalt vs Concrete Calculator - Compare Costs',
+    title: 'Asphalt vs Concrete - Compare Costs',
     description: 'Compare asphalt and concrete driveway costs side-by-side. Calculate initial installation, maintenance costs, and long-term value for your paving project.',
     keywords: [
       'asphalt vs concrete driveway cost calculator',
       'asphalt vs concrete comparison',
-      'driveway material comparison',
       'paving cost comparison'
     ],
     canonical: `${siteConfig.url}/asphalt-vs-concrete`
   },
   tonnage: {
-    title: 'Asphalt Tonnage Calculator - Calculate Weight',
+    title: 'Asphalt Tonnage Calculator - Weight',
     description: 'Calculate asphalt tonnage for your paving project. Accurate weight estimates based on area, thickness, and asphalt density for material ordering.',
     keywords: [
       'asphalt tonnage calculator',
@@ -70,7 +61,7 @@ export const pageSEO: Record<string, PageSEO> = {
     canonical: `${siteConfig.url}/tonnage-calculator`
   },
   guide: {
-    title: 'Asphalt Paving Guide - Tips and Best Practices',
+    title: 'Asphalt Paving Guide - Best Practices',
     description: 'Complete guide to asphalt paving including thickness recommendations, cost factors, maintenance tips, and installation best practices for driveways.',
     keywords: [
       'asphalt paving guide',
@@ -81,7 +72,7 @@ export const pageSEO: Record<string, PageSEO> = {
     canonical: `${siteConfig.url}/guide`
   },
   faq: {
-    title: 'Asphalt Calculator FAQ - Common Questions Answered',
+    title: 'Asphalt Calculator FAQ - Questions',
     description: 'Find answers to frequently asked questions about asphalt calculations, costs, installation, and maintenance for residential and commercial paving projects.',
     keywords: [
       'asphalt calculator faq',
@@ -92,14 +83,14 @@ export const pageSEO: Record<string, PageSEO> = {
     canonical: `${siteConfig.url}/faq`
   },
   privacy: {
-    title: 'Privacy Policy',
-    description: 'Privacy Policy for Asphalt Calculator.',
+    title: 'Privacy Policy - Asphalt Calculator Data Protection',
+    description: 'Read our Privacy Policy to understand how Asphalt Calculator collects, uses, and protects your personal data when you use our free paving estimation tools.',
     keywords: ['privacy policy'],
     canonical: `${siteConfig.url}/privacy`
   },
   terms: {
-    title: 'Terms of Service',
-    description: 'Terms of Service for Asphalt Calculator.',
+    title: 'Terms of Service - Asphalt Calculator Usage Rules',
+    description: 'Review the Terms of Service for Asphalt Calculator. Understand the rules, disclaimers, and limitations of liability when using our free online estimation tools.',
     keywords: ['terms of service'],
     canonical: `${siteConfig.url}/terms`
   }
