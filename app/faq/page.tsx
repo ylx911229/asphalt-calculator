@@ -6,6 +6,9 @@ export const metadata: Metadata = {
   title: pageSEO.faq.title,
   description: pageSEO.faq.description,
   keywords: pageSEO.faq.keywords,
+  alternates: {
+    canonical: pageSEO.faq.canonical,
+  },
 };
 
 export default function FAQPage() {

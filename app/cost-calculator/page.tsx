@@ -7,6 +7,9 @@ export const metadata: Metadata = {
   title: pageSEO.cost.title,
   description: pageSEO.cost.description,
   keywords: pageSEO.cost.keywords,
+  alternates: {
+    canonical: pageSEO.cost.canonical,
+  },
 };
 
 export default function CostCalculatorPage() {

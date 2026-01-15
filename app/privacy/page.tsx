@@ -9,6 +9,9 @@ export const metadata: Metadata = {
     index: false,
     follow: true,
   },
+  alternates: {
+    canonical: `${siteConfig.url}/privacy`,
+  },
 };
 
 export default function PrivacyPage() {

@@ -7,6 +7,9 @@ export const metadata: Metadata = {
   title: pageSEO.tonnage.title,
   description: pageSEO.tonnage.description,
   keywords: pageSEO.tonnage.keywords,
+  alternates: {
+    canonical: pageSEO.tonnage.canonical,
+  },
 };
 
 export default function TonnagePage() {

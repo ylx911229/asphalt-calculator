@@ -8,6 +8,8 @@ export default function sitemap() {
     '/asphalt-vs-concrete',
     '/guide',
     '/faq',
+    '/privacy',
+    '/terms',
   ].map((route) => ({
     url: `${siteConfig.url}${route}`,
     lastModified: new Date().toISOString(),

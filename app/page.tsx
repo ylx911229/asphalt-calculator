@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   title: pageSEO.home.title,
   description: pageSEO.home.description,
   keywords: pageSEO.home.keywords,
+  alternates: {
+    canonical: pageSEO.home.canonical,
+  },
 };
 
 export default function HomePage() {

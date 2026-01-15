@@ -77,9 +77,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="h-full">
-      <head>
-        <link rel="canonical" href={siteConfig.url} />
-      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased flex flex-col min-h-full`}
       >

@@ -21,7 +21,7 @@ export interface PageSEO {
   title: string;
   description: string;
   keywords: string[];
-  canonical?: string;
+  canonical: string;
 }
 
 export const pageSEO: Record<string, PageSEO> = {
@@ -33,7 +33,8 @@ export const pageSEO: Record<string, PageSEO> = {
       'paving calculator',
       'asphalt cost calculator',
       'driveway calculator'
-    ]
+    ],
+    canonical: siteConfig.url
   },
   cost: {
     title: 'Asphalt Driveway Cost Calculator - Estimate Paving',
@@ -43,7 +44,8 @@ export const pageSEO: Record<string, PageSEO> = {
       'cost of asphalt driveway calculator',
       'paving cost estimator',
       'driveway cost calculator'
-    ]
+    ],
+    canonical: `${siteConfig.url}/cost-calculator`
   },
   comparison: {
     title: 'Asphalt vs Concrete Calculator - Compare Costs',
@@ -53,7 +55,8 @@ export const pageSEO: Record<string, PageSEO> = {
       'asphalt vs concrete comparison',
       'driveway material comparison',
       'paving cost comparison'
-    ]
+    ],
+    canonical: `${siteConfig.url}/asphalt-vs-concrete`
   },
   tonnage: {
     title: 'Asphalt Tonnage Calculator - Calculate Weight',
@@ -63,7 +66,8 @@ export const pageSEO: Record<string, PageSEO> = {
       'asphalt ton calculator',
       'asphalt weight calculator',
       'tonnage estimator'
-    ]
+    ],
+    canonical: `${siteConfig.url}/tonnage-calculator`
   },
   guide: {
     title: 'Asphalt Paving Guide - Tips and Best Practices',
@@ -73,7 +77,8 @@ export const pageSEO: Record<string, PageSEO> = {
       'asphalt thickness guide',
       'paving tips',
       'driveway installation'
-    ]
+    ],
+    canonical: `${siteConfig.url}/guide`
   },
   faq: {
     title: 'Asphalt Calculator FAQ - Common Questions Answered',
@@ -83,6 +88,19 @@ export const pageSEO: Record<string, PageSEO> = {
       'asphalt questions',
       'paving faq',
       'driveway questions'
-    ]
+    ],
+    canonical: `${siteConfig.url}/faq`
+  },
+  privacy: {
+    title: 'Privacy Policy',
+    description: 'Privacy Policy for Asphalt Calculator.',
+    keywords: ['privacy policy'],
+    canonical: `${siteConfig.url}/privacy`
+  },
+  terms: {
+    title: 'Terms of Service',
+    description: 'Terms of Service for Asphalt Calculator.',
+    keywords: ['terms of service'],
+    canonical: `${siteConfig.url}/terms`
   }
 };

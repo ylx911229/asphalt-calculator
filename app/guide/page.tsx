@@ -7,6 +7,9 @@ export const metadata: Metadata = {
   title: pageSEO.guide.title,
   description: pageSEO.guide.description,
   keywords: pageSEO.guide.keywords,
+  alternates: {
+    canonical: pageSEO.guide.canonical,
+  },
 };
 
 export default function GuidePage() {

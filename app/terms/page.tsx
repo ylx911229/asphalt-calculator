@@ -9,6 +9,9 @@ export const metadata: Metadata = {
     index: false,
     follow: true,
   },
+  alternates: {
+    canonical: `${siteConfig.url}/terms`,
+  },
 };
 
 export default function TermsPage() {

@@ -6,6 +6,9 @@ export const metadata: Metadata = {
   title: pageSEO.comparison.title,
   description: pageSEO.comparison.description,
   keywords: pageSEO.comparison.keywords,
+  alternates: {
+    canonical: pageSEO.comparison.canonical,
+  },
 };
 
 export default function ComparisonPage() {
