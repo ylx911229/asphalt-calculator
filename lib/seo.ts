@@ -1,7 +1,7 @@
 export const siteConfig = {
   name: 'Asphalt Calculator',
   description: 'Free asphalt calculator for paving projects. Calculate material costs, tonnage, and compare asphalt vs concrete for driveways and parking lots.',
-  url: 'https://asphaltcalculator.com',
+  url: 'https://asphalt-calculator.net',
   ogImage: '/logo.png',
   keywords: [
     'asphalt calculator',

@@ -3,4 +3,4 @@ User-agent: *
 Allow: /
 
 # Sitemaps
-Sitemap: https://asphaltcalculator.com/sitemap.xml
+Sitemap: https://asphalt-calculator.net/sitemap.xml
