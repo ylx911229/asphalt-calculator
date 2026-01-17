@@ -13,7 +13,7 @@ export default function sitemap() {
   ].map((route) => ({
     url: `${siteConfig.url}${route}`,
     lastModified: new Date().toISOString(),
-    changeFrequency: 'weekly' as const,
+    changeFrequency: 'daily' as const,
     priority: route === '' ? 1.0 : 0.8,
   }));
 
